@@ -8,19 +8,21 @@
         
         
         <!-- Bean of the dependency -->
-        
-        <bean id="myOutfit" class="fr.wildcodeschool.thewizardproject.Outfit">
-        </bean>
+        <!-- <bean id="myOutfit" class="fr.wildcodeschool.thewizardproject.Outfit">
+        </bean> -->
         
         <!-- Bean of the WizardInterface -->
-        
-        <bean id = "theWizard" class="fr.wildcodeschool.thewizardproject.Dumbledore">
+        <!-- <bean id = "theWizard" class="fr.wildcodeschool.thewizardproject.Dumbledore"> -->
        
         
         <!-- Injection in the constructor -->
+       <!--  <constructor-arg ref="myOutfit"/>
+        </bean> -->
         
-        <constructor-arg ref="myOutfit"/>
         
-        </bean>
+        
+        <!-- SOLUTION 2 -->
+        <context:component-scan base-package="fr.wildcodeschool.thewizardproject">
+    </context:component-scan>
         
 </beans>        
